@@ -8,6 +8,8 @@ import OrdersPage from "./pages/OrdersPage";
 import ProductOrderDetailsPage from "./pages/ProductOrderDetailsPage";
 import ProductOrderCreatePage from "./pages/ProductOrderCreatePage";
 import InputsPage from "./pages/InputsPage";
+import ProductInputCreatePage from "./pages/ProductInputCreatePage";
+import ProductInputDetailsPage from "./pages/ProductInputDetailsPage";
 import OutputsPage from "./pages/OutputsPage";
 
 export default function App() {
@@ -25,6 +27,8 @@ export default function App() {
             <Route path="/orders/new" element={<ProductOrderCreatePage />} />
             <Route path="/orders/:productOrderId" element={<ProductOrderDetailsPage />} />
             <Route path="/inputs" element={<InputsPage />} />
+            <Route path="/inputs/new" element={<ProductInputCreatePage />} />
+            <Route path="/inputs/:productInputId" element={<ProductInputDetailsPage />} />
             <Route path="/outputs" element={<OutputsPage />} />
           </Routes>
         </main>
